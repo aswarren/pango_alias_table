@@ -6,7 +6,7 @@ https://raw.githubusercontent.com/cov-lineages/pango-designation/master/lineage_
 
 A DataFrame is created with the compressed lineage names. The base variants are added as a new column 'alias' to the DataFrame. If a lineage does not have a base variant, the lineage name is used as the alias.
 To control this the `alias_list` is a list of PANGO lineage names that an analyst wants to map to their subvariants. The aliasing is done in such a way as to partition the rows to the lowest common ancestor in the
-pangolin hierarchy, i.e. it chooses the most specific alias label that applies to the row at hand.
+pangolin hierarchy, i.e. it chooses the most specific alias label that applies to the row.
 
 The user supplied `pango_to_voc` dictionary maps some PANGO lineage names to their corresponding Variants of Concern (VOC) names.
 
